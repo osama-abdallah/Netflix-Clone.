@@ -19,6 +19,7 @@ export default function Movie(props) {
 
     }
 
+    
     let moviedata = props.obj;
     return (
         <>
