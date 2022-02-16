@@ -8,11 +8,10 @@ function Home() {
     const getMovie = async () => {
         
         try {
-            const response = await fetch(`${process.env.REACT_APP_SERVER}`)
-            // /trending`)
+            const response = await fetch(`${process.env.REACT_APP_SERVER}/trending`)
             const data = await response.json();
             console.log(data);
-            setMovie(data.results);
+            setMovie(data);
         } catch (error) {
             console.log("error", error);
         }
