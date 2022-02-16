@@ -18,8 +18,7 @@ export default function Movie(props) {
         setchosenMovie(movie);
 
     }
-
-    
+   
     let moviedata = props.obj;
     return (
         <>
