@@ -4,7 +4,7 @@ import Movie from './Movie';
 
 
 export default function MovieList(props) {
-    console.log(props);
+    // console.log(props);
     return (
         <>
         <h2> MovieList:</h2>
@@ -13,7 +13,7 @@ export default function MovieList(props) {
                 props.movie1.map(obj => {
                     return (
                         <>
-                            <Movie key={obj.id} obj={obj} />
+                            <Movie key={obj.id} obj={obj} commentUpdate={props.commentUpdate} />
                         </>
 
                     );
